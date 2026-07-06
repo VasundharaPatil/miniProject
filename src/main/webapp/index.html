@@ -1,84 +1,206 @@
-%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>DevOps Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DevOps Deployment</title>
 
 <style>
-    body{
-        margin:0;
-        padding:0;
-        font-family:Arial, sans-serif;
-        background:linear-gradient(to right,#1f4037,#99f2c8);
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        height:100vh;
-    }
 
-    .container{
-        background:white;
-        padding:40px;
-        border-radius:15px;
-        box-shadow:0 0 20px rgba(0,0,0,0.3);
-        text-align:center;
-        width:500px;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+}
 
-    h1{
-        color:#2c3e50;
-    }
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#eef2ff,#dbeafe);
+}
 
-    p{
-        color:#555;
-        font-size:18px;
-    }
+.card{
 
-    .success{
-        color:green;
-        font-size:22px;
-        font-weight:bold;
-    }
+    width:700px;
+    background:#ffffff;
 
-    footer{
-        margin-top:20px;
-        color:#777;
-    }
+    border-radius:20px;
+    padding:45px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+    text-align:center;
+
+}
+
+.logo{
+
+    font-size:55px;
+}
+
+h1{
+
+    margin-top:10px;
+    color:#1e293b;
+    font-size:40px;
+}
+
+.success{
+
+    color:#16a34a;
+    font-size:22px;
+    font-weight:600;
+
+    margin-top:20px;
+}
+
+.desc{
+
+    color:#64748b;
+    margin-top:12px;
+    font-size:18px;
+}
+
+.line{
+
+    width:100%;
+    height:1px;
+    background:#e2e8f0;
+    margin:35px 0;
+}
+
+.grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.tech{
+
+    background:#f8fafc;
+    padding:18px;
+    border-radius:12px;
+
+    transition:.3s;
+}
+
+.tech:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.tech h3{
+
+    margin-top:8px;
+    color:#0f172a;
+}
+
+.tech p{
+
+    color:#64748b;
+    font-size:14px;
+    margin-top:5px;
+}
+
+.footer{
+
+    margin-top:35px;
+    color:#94a3b8;
+}
+
+.badge{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#dcfce7;
+
+    color:#166534;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    font-weight:bold;
+}
+
 </style>
 
 </head>
+
 <body>
 
-<div class="container">
-    <h1>🚀 DevOps Project</h1>
+<div class="card">
 
-    <p class="success">
-        Application Successfully Deployed on Apache Tomcat
-    </p>
+<div class="logo">🚀</div>
 
-    <p>
-        CI/CD Pipeline Demonstration
-    </p>
+<h1>DevOps Deployment</h1>
 
-    <hr>
+<div class="success">
+Application Successfully Deployed
+</div>
 
-    <h3>Technology Stack</h3>
+<p class="desc">
+Your CI/CD pipeline is running successfully on Apache Tomcat.
+</p>
 
-    <p>
-        ✔ Apache Tomcat<br>
-        ✔ Java JSP<br>
-        ✔ Git<br>
-        ✔ Jenkins<br>
-        ✔ Docker<br>
-        ✔ AWS EC2
-    </p>
+<div class="badge">
+✔ Build Successful
+</div>
 
-    <footer>
-        Deployed Successfully 🎉
-    </footer>
+<div class="line"></div>
+
+<div class="grid">
+
+<div class="tech">
+<h3>☕ Java</h3>
+<p>Backend Application</p>
+</div>
+
+<div class="tech">
+<h3>🐱 Tomcat</h3>
+<p>Application Server</p>
+</div>
+
+<div class="tech">
+<h3>☁ AWS EC2</h3>
+<p>Cloud Hosting</p>
+</div>
+
+<div class="tech">
+<h3>🐳 Docker</h3>
+<p>Containerization</p>
+</div>
+
+<div class="tech">
+<h3>⚙ Jenkins</h3>
+<p>CI/CD Automation</p>
+</div>
+
+<div class="tech">
+<h3>🌿 GitHub</h3>
+<p>Version Control</p>
+</div>
+
+</div>
+
+<div class="footer">
+
+<h3>🎉 Deployment Completed Successfully</h3>
+
+<p style="margin-top:10px;">
+Designed for DevOps Mini Project
+</p>
+
+</div>
 
 </div>
 
